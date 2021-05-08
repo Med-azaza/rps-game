@@ -6,7 +6,10 @@ const Header=()=>{
     return(
         <div className="header">
             <img src={logo} alt="" />
-            <div className="score"></div>
+            <div className="score">
+                <span>SCORE</span>
+                <span>12</span>
+            </div>
         </div>
     )
 }
