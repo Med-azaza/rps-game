@@ -20,6 +20,7 @@ body {
   font-weight: 600;
   font-size: 2em;
   transition: all 0.3s;
+  z-index: 99;
 }
 .close {
   float: right;
@@ -58,6 +59,16 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.score-text {
+  color: hsl(229, 64%, 46%);
+  font-size: 18px;
+  font-weight: 400;
+}
+.score-num {
+  color: darkslategray;
+  font-size: 40px;
+  font-weight: 600;
 }
 .rulebtn {
   width: 120px;
@@ -137,4 +148,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.paper-icon:hover,
+.scissors-icon:hover,
+.rock-icon:hover {
+  transform: scale(1.1, 1.1);
+}
+.paper-icon,
+.scissors-icon,
+.rock-icon {
+  transition: all 0.2s;
+  cursor: pointer;
 }

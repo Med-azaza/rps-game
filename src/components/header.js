@@ -7,8 +7,8 @@ const Header=()=>{
         <div className="header">
             <img src={logo} alt="" />
             <div className="score">
-                <span>SCORE</span>
-                <span>12</span>
+                <span className='score-text'>SCORE</span>
+                <span className='score-num'>12</span>
             </div>
         </div>
     )

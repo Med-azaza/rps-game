@@ -1,11 +1,12 @@
 import React from 'react';
 import Select from './select';
+import Result from './result';
 
 
-const Game=()=>{
+const Game=({current,setCurrent})=>{
     return(
         <div className="game">
-            <Select/>
+            {current==='select' ? <Select setCurrent={setCurrent}/>:<Result/>}
 
         </div>
     )
